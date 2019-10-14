@@ -1,18 +1,41 @@
 /* Container */
-.container {
-  width: 80%;
-  margin: 0 auto;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 }
 
 /* Ligne */
 .row {
-    border: solid red 1px;
+  border: solid red 1px;
 }
 
 .row:after {
-    clear: both;
-    content: "";
-    display: block;
+  clear: both;
+  content: "";
+  display: block;
 }
 
 /* Colonne */
