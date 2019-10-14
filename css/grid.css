@@ -1,0 +1,80 @@
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Ligne */
+.row {
+    border: solid red 1px;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* Colonne */
+.col {
+  float: left;
+  background-color: lightgray;
+  margin: 1.041666667%;
+  height: 3rem;
+}
+
+/* Media querries : 768 992 1200 */
+/* Si l'écran est plus grand que 992px */
+@media screen and (min-width: 768px) {
+  .col-md-2 {
+    /* 140/960 */
+    width: 14.583333333%;
+  }
+
+  .col-md-4 {
+    /* 300/960 */
+    width: 31.25%;
+  }
+
+  .col-md-6 {
+    width: 47.916666667%;
+  }
+
+  .col-md-8 {
+    /* 620/960 */
+    width: 64.583333333%;
+  }
+
+  .col-md-12 {
+    /* 940/960 */
+    width: 97.916666667%;
+  }
+}
+
+/* Si l'écran est plus petit de 768px */
+@media screen and (max-width: 768px) {
+  .col-sm-2 {
+    /* 140/960 */
+    width: 14.583333333%;
+  }
+
+  .col-sm-4 {
+    /* 300/960 */
+    width: 31.25%;
+  }
+
+  .col-sm-6 {
+    /* 460/960 */
+    width: 47.916666667%;
+  }
+
+  .col-sm-8 {
+    /* 620/960 */
+    width: 64.583333333%;
+  }
+
+  .col-sm-12 {
+    /* 940/960 */
+    width: 97.916666667%;
+  }
+}
